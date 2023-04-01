@@ -16,6 +16,12 @@ const Button = styled.button`
   &:hover {
     transition: background-color 0.2s, color 0.2s, filter 0.2s;
   }
+
+  &:focus,
+  &:active {
+    outline: 3px solid ${defaultTheme.primaryColorHover};
+    outline-offset: 2px;
+  }
 `
 
 export const PrimaryButton = styled(Button)`

@@ -7,5 +7,7 @@ export const defaultTheme = {
   primaryColorActive: blue[200],
   whiteColor: neutral[100],
   blackColor: neutral[600],
+  disabled: neutral[400],
+  textOnDisabled: neutral[300],
   primaryFont
 }
