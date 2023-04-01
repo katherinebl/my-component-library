@@ -1,12 +1,9 @@
 import styled from "styled-components";
-
-const primaryColor = '#5f25a4';
-const secondaryColor = '#81559B';
-
+import { defaultTheme, typeScale } from '../utils'
 
 const Button = styled.button`
   padding: 12px 24px;
-  font-size: 1rem;
+  font-size: ${typeScale.paragraph};
   color: white;
   border-radius: 5px;
   border: none;
@@ -18,17 +15,18 @@ const Button = styled.button`
 `
 
 export const PrimaryButton = styled(Button)`
-  background-color: ${primaryColor};
+  background-color: ${defaultTheme.primaryColor};
 
 `
 
 export const SecondaryButton = styled(Button)`
-  background-color: ${secondaryColor};
+  border: solid 2px ${defaultTheme.primaryColorActive};
+  color: ${defaultTheme.primaryColorActive};
+  background: ${defaultTheme.whiteColor} ;
 `;
 
 export const TertiaryButton = styled(Button)`
-  color: ${secondaryColor};
-  border: solid 2px ${secondaryColor};
+  background-color: ${defaultTheme.primaryColorHover};
 `;
 
 
