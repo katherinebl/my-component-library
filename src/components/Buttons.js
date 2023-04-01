@@ -22,6 +22,12 @@ const Button = styled.button`
     outline: 3px solid ${defaultTheme.primaryColorHover};
     outline-offset: 2px;
   }
+
+  &:disabled {
+    background-color: ${defaultTheme.disabled};
+    color: ${defaultTheme.textOnDisabled};
+    pointer-events: none;
+  }
 `
 
 export const PrimaryButton = styled(Button)`
@@ -36,10 +42,12 @@ export const SecondaryButton = styled(Button)`
   border: solid 2px ${defaultTheme.primaryColorActive};
   color: ${defaultTheme.primaryColorActive};
   background-color: ${defaultTheme.whiteColor} ;
-
   &:hover {
     background-color: ${defaultTheme.primaryColorActive};
     color: ${defaultTheme.whiteColor};
+  }
+  &:disabled {
+    border-color: ${defaultTheme.disabled};
   }
 `;
 
