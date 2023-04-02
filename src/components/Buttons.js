@@ -11,7 +11,7 @@ const Button = styled.button`
   width: auto;
   cursor: pointer;
   display: block;
-  margin-bottom: 15px;
+  margin: 15px;
 
   &:hover {
     transition: background-color 0.2s, color 0.2s, filter 0.2s;
